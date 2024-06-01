@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Product4 from "../../assets/product4.svg";
 
 import { useState } from "react";
