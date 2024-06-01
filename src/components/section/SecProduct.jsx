@@ -1,4 +1,5 @@
 import CardProduct from "../ui/CardProduct";
+import CatalogProduct from "../ui/CatalogProduct";
 
 export default function SecProduct() {
   return (
@@ -17,6 +18,7 @@ export default function SecProduct() {
         <CardProduct />
         <CardProduct />
       </div>
+      <CatalogProduct />
     </section>
   );
 }
