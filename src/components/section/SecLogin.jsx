@@ -4,7 +4,7 @@ import Button from "../ui/Button";
 export default function SecLogin() {
   return (
     <section className="container my-12">
-      <div className="mx-auto flex w-2/5 flex-col justify-center">
+      <div className="mx-auto flex w-3/5 flex-col justify-center">
         <h1 className="text-primary text-center text-4xl font-bold">Log In</h1>
         <form className="mt-6 flex flex-col">
           <input
