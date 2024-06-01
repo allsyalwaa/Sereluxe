@@ -1,5 +1,7 @@
 import Product1 from "../../assets/product1.svg";
 import Button from "../ui/Button";
+import CardCategory from "../ui/CardCategory";
+import CardProduct from "../ui/CardProduct";
 
 export default function SecHero() {
   return (
@@ -77,7 +79,21 @@ export default function SecHero() {
         </div>
         <div className="border-primary rounded-2xl border-[1.5px] bg-white p-6">
           <h1 className="text-primary text-xl font-semibold">Category</h1>
+          <div className="border-primary mt-4 w-full border-b-[1px]"></div>
+          <CardCategory />
+          <CardCategory />
+          <CardCategory />
         </div>
+      </div>
+      <div className="mt-10 grid grid-cols-4 gap-8">
+        <CardProduct />
+        <CardProduct />
+        <CardProduct />
+        <CardProduct />
+        <CardProduct />
+        <CardProduct />
+        <CardProduct />
+        <CardProduct />
       </div>
     </section>
   );
