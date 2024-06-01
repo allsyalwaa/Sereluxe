@@ -20,8 +20,8 @@ export default function Navbar() {
   }, []);
   return (
     <nav className="shadow">
-      <div className="bg-whites container fixed left-0 right-0 top-0">
-        <div className="flex h-16 items-center justify-between">
+      <div className="container fixed left-0 right-0 top-0 bg-white">
+        <div className="flex h-[72px] items-center justify-between">
           <NavLink to="/">
             <img className="h-7" src={Logo} alt="ZS" />
           </NavLink>
