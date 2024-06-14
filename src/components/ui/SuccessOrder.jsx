@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { NavLink } from "react-router-dom";
 import Button from "./Button";
 import { useState } from "react";
 
@@ -33,9 +34,11 @@ export default function SuccessOrder({ onClose }) {
               Your Order Success
             </h1>
 
-            <Button variant="secondary" className="mx-auto mt-6">
-              Continue
-            </Button>
+            <NavLink to="/">
+              <Button variant="secondary" className="mx-auto mt-6">
+                Continue
+              </Button>
+            </NavLink>
           </div>
         </div>
       )}
