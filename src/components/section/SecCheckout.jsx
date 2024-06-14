@@ -3,6 +3,7 @@ import Bri from "../../assets/bri.svg";
 import bca from "../../assets/bca.svg";
 import mandiri from "../../assets/mandiri.svg";
 import Button from "../ui/Button";
+import { NavLink } from "react-router-dom";
 
 export default function SecCheckout() {
   return (
@@ -34,9 +35,11 @@ export default function SecCheckout() {
               <img src={mandiri} alt="" />
             </div>
           </form>
-          <Button type="submit" variant="primary" className="mt-6 w-full">
-            Payment
-          </Button>
+          <NavLink to="/payment">
+            <Button type="submit" variant="primary" className="mt-6 w-full">
+              Payment
+            </Button>
+          </NavLink>
         </div>
       </div>
     </section>
