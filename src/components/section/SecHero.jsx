@@ -1,7 +1,11 @@
-import Product1 from "../../assets/product1.svg";
+import ProductBesar from "../../assets/product_besar.svg";
 import Button from "../ui/Button";
 import CardCategory from "../ui/CardCategory";
 import CardProduct from "../ui/CardProduct";
+
+import Innisfree from "../../assets/innisfree.svg";
+import Laneige from "../../assets/laneige.svg";
+import Nacific from "../../assets/nacific.svg";
 
 export default function SecHero() {
   return (
@@ -10,10 +14,10 @@ export default function SecHero() {
         <div className="col-span-2 rounded-2xl bg-white p-6 shadow">
           <div className="grid grid-cols-2 items-center gap-8">
             <div>
-              <img src={Product1} alt="" />
+              <img src={ProductBesar} alt="" />
             </div>
             <div>
-              <h1 className="text-4xl font-bold text-black">Nama product</h1>
+              <h1 className="text-4xl font-bold text-black">Eye Cream </h1>
               <div className="mt-2 flex items-center gap-2 font-medium">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -29,11 +33,12 @@ export default function SecHero() {
                 </svg>
                 <p className="text-base">4.6</p>
               </div>
-              <p className="mt-2 text-wrap text-base text-black/50">
-                Lorem ipsum dolor sit amet,consectetur adipiscing elit...
+              <p className="mt-2 line-clamp-2 text-ellipsis text-wrap text-base text-black/50">
+                A nourishing eye cream that helps deeply hydrate and improve the
+                moisture barrier around the delicate eye areas.
               </p>
               <div className="mt-2 flex items-center justify-between">
-                <p className="text-primary text-2xl font-semibold">$5.00</p>
+                <p className="text-2xl font-semibold text-primary">$23.38</p>
                 <div className="flex items-center gap-2 rounded-full border-[1.5px] border-black/50 p-1">
                   <div className="rounded-full bg-black/50 p-1">
                     <svg
@@ -77,12 +82,12 @@ export default function SecHero() {
             </div>
           </div>
         </div>
-        <div className="border-primary rounded-2xl border-[1.5px] bg-white p-6">
-          <h1 className="text-primary text-xl font-semibold">Category</h1>
-          <div className="border-primary mt-4 w-full border-b-[1px]"></div>
-          <CardCategory />
-          <CardCategory />
-          <CardCategory />
+        <div className="rounded-2xl border-[1.5px] border-primary bg-white p-6">
+          <h1 className="text-xl font-semibold text-primary">Category</h1>
+          <div className="mt-4 w-full border-b-[1px] border-primary"></div>
+          <CardCategory image={Innisfree} name={"Innisfree"} />
+          <CardCategory image={Laneige} name={"Laneige"} />
+          <CardCategory image={Nacific} name={"Nacific"} />
         </div>
       </div>
       <div className="mt-10 grid grid-cols-4 gap-8">
