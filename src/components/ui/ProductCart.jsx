@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { NavLink } from "react-router-dom";
 import Button from "./Button";
 
 export default function ProductCart({ image, name, price, totalprice }) {
@@ -41,9 +42,11 @@ export default function ProductCart({ image, name, price, totalprice }) {
         </div>
       </div>
       <p className="flex justify-end text-sm font-medium">${totalprice}</p>
-      <Button className={"w-full"} variant="primary">
-        Buy Now
-      </Button>
+      <NavLink to="/checkout">
+        <Button className={"w-full"} variant="primary">
+          Buy Now
+        </Button>
+      </NavLink>
     </div>
   );
 }
