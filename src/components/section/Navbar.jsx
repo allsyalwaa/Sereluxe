@@ -23,7 +23,7 @@ export default function Navbar() {
       <div className="container top-0 mx-auto">
         <div className="flex h-[72px] items-center justify-between">
           <NavLink to="/">
-            <img className="h-7" src={Logo} alt="ZS" />
+            <img className="h-7" src={Logo} />
           </NavLink>
 
           <ul
@@ -112,22 +112,22 @@ export default function Navbar() {
               </NavLink>
             </li>
             <li className={`${isOpen ? "hidden" : "block"}`}>
-              <NavLink to="/">
+              <NavLink to="/login">
                 <Button variant="white">Log In</Button>
               </NavLink>
             </li>
             <li className={`${isOpen ? "block" : "hidden"}`}>
-              <NavLink to="/">
+              <NavLink to="/login">
                 <Button variant="primary">Log In</Button>
               </NavLink>
             </li>
             <li className={`${isOpen ? "hidden" : "block"}`}>
-              <NavLink to="/">
+              <NavLink to="/signup">
                 <Button variant="primary">Sign Up</Button>
               </NavLink>
             </li>
             <li className={`${isOpen ? "block" : "hidden"}`}>
-              <NavLink to="/">
+              <NavLink to="/signup">
                 <Button variant="primary">Sign Up</Button>
               </NavLink>
             </li>
