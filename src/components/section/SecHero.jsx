@@ -7,6 +7,15 @@ import Innisfree from "../../assets/innisfree.svg";
 import Laneige from "../../assets/laneige.svg";
 import Nacific from "../../assets/nacific.svg";
 
+import product1 from "../../assets/1.svg";
+import product2 from "../../assets/2.svg";
+import product3 from "../../assets/3.svg";
+import product4 from "../../assets/4.svg";
+import product5 from "../../assets/5.svg";
+import product6 from "../../assets/6.svg";
+import product7 from "../../assets/7.svg";
+import product8 from "../../assets/8.svg";
+
 export default function SecHero() {
   return (
     <section className="container my-12">
@@ -91,14 +100,38 @@ export default function SecHero() {
         </div>
       </div>
       <div className="mt-10 grid grid-cols-4 gap-8">
-        <CardProduct />
-        <CardProduct />
-        <CardProduct />
-        <CardProduct />
-        <CardProduct />
-        <CardProduct />
-        <CardProduct />
-        <CardProduct />
+        <CardProduct
+          image={product1}
+          name={"Fresh Herb Serum"}
+          price={"26.00"}
+        />
+        <CardProduct
+          image={product2}
+          name={"Radian-C Spot Serum"}
+          price={"28.30"}
+        />
+        <CardProduct
+          image={product3}
+          name={"Tone Up Sunscreen"}
+          price={"13.23"}
+        />
+        <CardProduct
+          image={product4}
+          name={"Fresh Cica Cream"}
+          price={"21.60"}
+        />
+        <CardProduct image={product5} name={"BHA cleansing"} price={"18.52"} />
+        <CardProduct
+          image={product6}
+          name={"Pink AHABHA Cream"}
+          price={"21.60"}
+        />
+        <CardProduct
+          image={product7}
+          name={"Moist Soothing Cream"}
+          price={"34.00"}
+        />
+        <CardProduct image={product8} name={"Perfect Renew"} price={"43.68"} />
       </div>
     </section>
   );
