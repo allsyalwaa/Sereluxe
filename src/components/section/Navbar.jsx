@@ -19,8 +19,8 @@ export default function Navbar() {
     };
   }, []);
   return (
-    <nav className="shadow">
-      <div className="container fixed left-0 right-0 top-0 bg-white">
+    <nav className="fixed w-full bg-white shadow">
+      <div className="container top-0 mx-auto">
         <div className="flex h-[72px] items-center justify-between">
           <NavLink to="/">
             <img className="h-7" src={Logo} alt="ZS" />
