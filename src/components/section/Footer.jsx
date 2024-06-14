@@ -57,20 +57,14 @@ export default function Footer() {
               Category
             </NavLink>
 
-            <NavLink to="/" className="text-lg">
-              Merk product
+            <NavLink to="/" className="text-lg uppercase">
+              Innisfree
             </NavLink>
-            <NavLink to="/" className="text-lg">
-              Merk product
+            <NavLink to="/" className="text-lg uppercase">
+              Laneige
             </NavLink>
-            <NavLink to="/" className="text-lg">
-              Merk product
-            </NavLink>
-            <NavLink to="/" className="text-lg">
-              Merk product
-            </NavLink>
-            <NavLink to="/" className="text-lg">
-              Merk product
+            <NavLink to="/" className="text-lg uppercase">
+              Nacific
             </NavLink>
           </div>
         </div>
