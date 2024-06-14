@@ -26,12 +26,12 @@ export default function SecPayment() {
           <p className="flex justify-end text-base">23 Mar 2024, 19:56</p>
         </div>
       </div>
-      <div className="border-primary mt-6 rounded-xl border-[1.5px] p-6">
+      <div className="mt-6 rounded-xl border-[1.5px] border-primary p-6">
         <img src={Bri} alt="" />
-        <div className="border-primary mt-4 w-full border-b-[1px]"></div>
+        <div className="mt-4 w-full border-b-[1px] border-primary"></div>
         <p className="mt-4 text-xl font-semibold">Account Number :</p>
         <div className="mt-4 flex items-center gap-8">
-          <p className="text-primary text-2xl font-semibold">
+          <p className="text-2xl font-semibold text-primary">
             4234 3425 3453 342
           </p>
           <svg
@@ -47,31 +47,27 @@ export default function SecPayment() {
           </svg>
         </div>
       </div>
-      <div className="border-primary mt-6 rounded-xl border-[1.5px] p-6">
+      <div className="mt-6 rounded-xl border-[1.5px] border-primary p-6">
         <p className="mt-4 text-xl font-semibold">Transfer Insctructions</p>
         <div className="mt-4 flex items-center gap-4">
           <div className="w-8 rounded-full border-[1.5px] border-black p-1">
             <p className="ml-2 text-sm font-medium">1</p>
           </div>
-          <p className="text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
+          <p className="text-lg">Open the BRImo app and log in.</p>
         </div>
 
         <div className="mt-4 flex items-center gap-4">
           <div className="w-8 rounded-full border-[1.5px] border-black p-1">
             <p className="ml-2 text-sm font-medium">2</p>
           </div>
-          <p className="text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
+          <p className="text-lg">Select "Transfer" > "To BRI Account".</p>
         </div>
         <div className="mt-4 flex items-center gap-4">
           <div className="w-8 rounded-full border-[1.5px] border-black p-1">
             <p className="ml-2 text-sm font-medium">3</p>
           </div>
           <p className="text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Enter the destination account number and amount.
           </p>
         </div>
         <div className="mt-4 flex items-center gap-4">
@@ -79,16 +75,14 @@ export default function SecPayment() {
             <p className="ml-2 text-sm font-medium">4</p>
           </div>
           <p className="text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Confirm the details and complete the transfer with your BRImo PIN.
           </p>
         </div>
         <div className="mt-4 flex items-center gap-4">
           <div className="w-8 rounded-full border-[1.5px] border-black p-1">
             <p className="ml-2 text-sm font-medium">5</p>
           </div>
-          <p className="text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
+          <p className="text-lg">Save the transaction receipt.</p>
         </div>
       </div>
 
