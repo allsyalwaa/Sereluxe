@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 export default function CardProduct({ image, name, price }) {
   return (
     <div className="flex flex-col gap-3 rounded-xl bg-white p-4 shadow">
