@@ -1,7 +1,19 @@
 import Bri from "../../assets/bri.svg";
 import Button from "../ui/Button";
+import SuccessOrder from "../ui/SuccessOrder";
+
+import { useState } from "react";
 
 export default function SecPayment() {
+  const [isSuccessOrderPopupOpen, setIsSuccessOrderPopupOpen] = useState(false);
+
+  const handleOpenSuccessOrderPopup = () => {
+    setIsSuccessOrderPopupOpen(true);
+  };
+
+  const handleCloseSuccessOrderPopup = () => {
+    setIsSuccessOrderPopupOpen(false);
+  };
   return (
     <section className="container my-12">
       <div className="grid grid-cols-2 gap-6">
@@ -79,9 +91,16 @@ export default function SecPayment() {
           </p>
         </div>
       </div>
-      <Button type="submit" variant="primary" className="mt-6 w-full">
-        Confirmation
-      </Button>
+
+      <button onClick={handleOpenSuccessOrderPopup} className="mt-6 w-full">
+        <Button type="submit" variant="primary" className="mt-6 w-full">
+          Confirmation
+        </Button>
+      </button>
+
+      {isSuccessOrderPopupOpen && (
+        <SuccessOrder onClose={handleCloseSuccessOrderPopup} />
+      )}
     </section>
   );
 }
