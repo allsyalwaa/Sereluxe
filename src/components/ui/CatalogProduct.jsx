@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import Product4 from "../../assets/product4.svg";
+import Product11 from "../../assets/11.svg";
 
 import { useState } from "react";
 import Button from "./Button";
@@ -34,9 +34,9 @@ export default function CatalogProduct({ onClose }) {
             </div>
 
             <div className="mt-4 flex w-full flex-col justify-start">
-              <img className="h-56" src={Product4} alt="" />
+              <img className="h-56" src={Product11} alt="" />
               <h1 className="mt-4 text-3xl font-bold text-black">
-                Nama Product
+                Green Tea Mist
               </h1>
               <div className="mt-2 flex items-center gap-2 font-medium">
                 <svg
@@ -54,11 +54,11 @@ export default function CatalogProduct({ onClose }) {
                 <p className="text-base">4.6</p>
               </div>
               <p className="mt-2 text-wrap text-base text-black/50">
-                Lorem ipsum dolor sit amet,consectetur adipiscing elit. Lorem
-                ipsum dolor sit amet,consectetur adipiscing elit. Lorem ipsum..
+                Refreshing facial mist with freshly double-squeezed jeju green
+                tea instantly hydrates for hydration and a healthy-looking glow.
               </p>
               <div className="mt-4 flex items-center justify-between">
-                <p className="text-primary text-2xl font-semibold">$5.00</p>
+                <p className="text-2xl font-semibold text-primary">$11.81</p>
                 <div className="flex items-center gap-2 rounded-full border-[1.5px] border-black/50 p-1">
                   <div className="rounded-full bg-black/50 p-1">
                     <svg
