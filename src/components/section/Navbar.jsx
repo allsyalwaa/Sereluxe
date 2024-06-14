@@ -68,7 +68,7 @@ export default function Navbar() {
               </div>
             </li>
             <li className={`mr-4 text-primary ${isOpen ? "hidden" : "block"}`}>
-              <NavLink to="/">
+              <NavLink to="/cart">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="2em"
@@ -89,7 +89,7 @@ export default function Navbar() {
               </NavLink>
             </li>
             <li className={`text-primary ${isOpen ? "block" : "hidden"}`}>
-              <NavLink to="/">
+              <NavLink to="/cart">
                 <Button variant="primary">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
