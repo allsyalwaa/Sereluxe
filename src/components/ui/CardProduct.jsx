@@ -1,13 +1,11 @@
-import Product2 from "../../assets/product2.svg";
-
-export default function CardProduct() {
+export default function CardProduct({ image, name, price }) {
   return (
     <div className="flex flex-col gap-3 rounded-xl bg-white p-4 shadow">
-      <img src={Product2} alt="" />
-      <h1 className="text-xl font-semibold text-black">Nama product</h1>
+      <img src={image} alt="" />
+      <h1 className="text-xl font-semibold text-black">{name}</h1>
       <div className="flex items-center justify-between">
-        <p className="text-primary text-lg font-medium">$5.00</p>
-        <div className="bg-primary rounded-full p-1">
+        <p className="text-lg font-medium text-primary">${price}</p>
+        <div className="rounded-full bg-primary p-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="1.5em"
