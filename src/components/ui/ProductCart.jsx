@@ -1,13 +1,13 @@
-import Product2 from "../../assets/product2.svg";
+/* eslint-disable react/prop-types */
 import Button from "./Button";
 
-export default function ProductCart() {
+export default function ProductCart({ image, name, price, totalprice }) {
   return (
     <div className="flex flex-col gap-3 rounded-xl bg-white p-4 shadow">
-      <img src={Product2} alt="" />
-      <h1 className="text-xl font-semibold text-black">Nama product</h1>
+      <img src={image} alt="" />
+      <h1 className="text-xl font-semibold text-black">{name}</h1>
       <div className="flex items-center justify-between">
-        <p className="text-primary text-xl font-medium">$5.00</p>
+        <p className="text-xl font-medium text-primary">${price}</p>
         <div className="flex items-center gap-2 rounded-full border-[1.5px] border-black/50 p-1">
           <div className="rounded-full bg-black/50 p-1">
             <svg
@@ -40,7 +40,7 @@ export default function ProductCart() {
           </div>
         </div>
       </div>
-      <p className="flex justify-end text-sm font-medium">$Totalprice</p>
+      <p className="flex justify-end text-sm font-medium">${totalprice}</p>
       <Button className={"w-full"} variant="primary">
         Buy Now
       </Button>
